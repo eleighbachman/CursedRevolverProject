@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>The Cursed Revolver</title>
+  <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <div id="featureBody">
+    <nav>
+      <a href="contact.html"> Contact Us </a>
+      <img src="textg.png" alt="Text">
+
+    </nav>
+
+    <ul id="navbar">
+      <li><a href="#midContent">About</a></li>
+      <li><a href="#midContent">News</a></li>
+      <li><a href="#splitBody">Gallery</a></li>
+    </ul>
+    <div id="introContent">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wEqAKBgXDIE" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+
+  </div>
+
+  <div id="middleBody">
+    <div id="midContent">
+      <div id="col1" class="col">
+        <h1>About the Game</h1>
+        <h2>University of Utah</h2>
+        <p>The Wild West is plunged into chaos when the land is cursed by an artifact known simply as, The Cursed Revolver. Discovered by an unsuspecting cowboy, the revolver becomes bound to him, and demands payment of life. The cowboy must now face the deadly demons of the west if he is to have any hope of breaking the curse.</p>
+      </div>
+      <div id="col2" class="col">
+        <h1>NEWS</h1>
+
+
+
+          <a href="news.html"><p>Sprint Updates<p></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="splitBody">
+
+  </div>
+
+
+  <div id="gallery">
+
+    <div id="stageArea">
+      <p id="close">X</p>
+      <img id="stageImg" src="crev.jpg"></img>
+    </div>
+    <div id="galleryContent">
+      <img id="gal1" class="galimg" src="imgs/2x3_boxart.jpg" alt="Gal 1">
+      <img id="gal2" class="galimg" src="imgs/b&w_assets copy.jpg" alt="Gal 2">
+      <img id="gal3" class="galimg" src="imgs/greenlit.png" alt="Gal 3">
+      <img id="gal4" class="galimg" src="imgs/crshadow.png" alt="Gal 4">
+      <img id="gal5" class="galimg" src="imgs/shamancr.jpg" alt="Gal 5">
+      <img id="gal6" class="galimg" src="imgs/ihatemenus1.jpg" alt="Gal 6">
+    </div>
+    <a href="#featureBody">Back to Top</a>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+
+$('.galimg').click(function() {
+  var imgsrc = $(this).attr('src');
+
+  $('#stageImg').attr('src', imgsrc);
+  $('#gallery').css({"height": "1250px"});
+  $('#stageArea').show("slow");
+
+})
+
+$('#close').click(function() {
+  $('#stageArea').hide("slow");
+  $('#gallery').css({"height":"600px"});
+})
+
+
+</script>
+</body>
+</html>
